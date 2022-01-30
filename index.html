@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="config_base.css">
+
+
+	<link rel="icon" href="C:\Users\alejf\OneDrive\Imágenes\Icons\alejandro_magno_icon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+		
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<title>TuEmpresa</title>
+</head>
+
+<body>
+
+<!------------------------------------------HEADER------------------------------------------>
+
+
+	<header>
+		<div class="div-logo">
+			<a href="index.html"><img class="div-logo__img" src="assets\img\tu_empresa_logo.png"><img class="div-logo__img-2" src="assets\img\tu_empresa_logo_mobile.png"></a>
+			<p class="div-logo__p">Innovative Design</p>
+		</div>
+		
+		<div class="div-buscador">
+			<form class="div-buscador__form">
+				<input type="text" class="div-buscador__input" name="busqueda" placeholder="Buscar">
+				<button class="div-buscador__button">
+					<i class="fas fa-search" type="button" name="Boton-busqueda"></i>
+				</button>
+			</form>
+		</div>
+
+		<nav class="menu">
+			<ul class="desktop">
+				<li class="item"><a href="#">Categorías <i class="fas fa-chevron-down"></i></a>
+					<ul class="desple">
+						<li><a href="categoria_a.html"> Categoría A</a></li>
+						<li><a href="categoria_b.html"> Categoría B</a></li>
+						<li><a href="categoria_c.html"> Categoría C</a></li>
+						<li><a href="categoria_d.html"> Categoría D</a></li>
+						<li><a href="categoria_e.html"> Categoría E</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a></li>
+				<li class="item"><a href="tiendas.html"><i class="fas fa-store"></i> Tiendas</a></li>
+				<li class="item"><a href="ayuda.html"><i class="fas fa-question-circle"></i> Ayuda</a></li>
+				<li class="item"><a href="nosotros.html"><i class="fas fa-user-friends"></i> Nosotros</a></li>
+				<li class="item"><a href="mis_compras.html"><i class="fas fa-receipt"></i> Mis Compras</a></li>
+				<li class="item"><a href="mi_cuenta.html"><i class="fas fa-address-book"></i> Mi cuenta</a></li>
+				<a href="carrito.html">
+					<div class="nav__div--carrito">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</a>				
+			</ul>
+
+			<ul class="mobile">
+				<li class="item barras"><a href="#aside-mobile"><i class="fas fa-bars"></i></a></li>
+				<li class="item cuenta"><a href="mi_cuenta.html"><i class="fas fa-address-book"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!------------------------------------------ASIDE------------------------------------------>
+
+
+	<aside class="aside-mobile" id="aside-mobile">
+		<ul class="aside-mobile__ul">
+			<div class="aside-home-y-cerrar">
+				<li class="item aside-mobile__li-inicio"><a href="index.html"><i class="fas fa-home"></i> Inico</a></li>
+				<li class="item aside-mobile__li-cerrar"><a href="#"><i class="fas fa-arrow-left"></i></a></li>
+			</div>
+			<div class="aside-mobile__buscador">
+				<form class="aside-mobile__li--form">
+					<input type="text" class="form__input" name="busqueda" placeholder="Buscar">
+					<button class="aside-mobile__button">
+						<i class="fas fa-search" type="button" name="Boton-busqueda"></i>
+					</button>
+
+				</form>
+			</div>
+			<ul class="categorias">
+				<li class="item"><a href="categoria_a.html"> Categoría A</a></li>
+				<li class="item"><a href="categoria_b.html"> Categoría B</a></li>
+				<li class="item"><a href="categoria_c.html"> Categoría C</a></li>
+				<li class="item"><a href="categoria_d.html"> Categoría D</a></li>
+				<li class="item"><a href="categoria_e.html"> Categoría E</a></li>
+			</ul>
+			<ul>
+				<li class="item aside-mobile__ul--li"><a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a></li>
+				<li class="item aside-mobile__ul--li"><a href="tiendas.html"><i class="fas fa-store"></i> Tiendas</a></li>
+				<li class="item aside-mobile__ul--li"><a href="nosotros.html"><i class="fas fa-question-circle"></i> Ayuda</a></li>
+				<li class="item aside-mobile__ul--li"><a href="nosotros.html"><i class="fas fa-user-friends"></i> Nosotros</a></li>
+				<li class="item aside-mobile__ul--li"><a href="mis_compras.html"><i class="fas fa-receipt"></i> Mis Compras</a></li>
+				<li class="item aside-mobile__ul--li"><a href="mi_cuenta.html"><i class="fas fa-address-book"></i> Mi cuenta</a></li>
+				<li class="item aside-mobile__li--carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"> Carrito</i></a></li>	
+			</ul>
+			<li class="item aside-mobile__li-nosotros"><a href="nosotros.html"><i class="fas fa-user-friends"></i> Nosotros</a></li>
+		</ul>
+	</aside>
+
+
+
+<!------------------------------------------CONTENT------------------------------------------>
+
+	<section class="slider">
+		<ul>
+			<li><a href="#"><img src="assets\img\k9dbannerEn.jpg"></a></li>
+			<li><a href="#"><img src="assets\img\mi-11t-banner.jpg"></a></li>
+			<li><a href="#"><img src="assets\img\mi-11t-pro-banner.jpg"></a></li>
+			<li><a href="#"><img src="assets\img\PC_Banner-c3j1.jpg"></a></li>
+			<li><a href="#"><img src="assets\img\redmi10banner.jpg"></a></li>
+		</ul>	
+	</section>
+
+	<section class="categorias">
+		<div class="categorias-container">
+			<div class="categorias__title">
+				<div><h2>CATEGORIAS</h2></div>
+				<img src="assets\img\espacio-nebulosa.jpg">
+			</div>
+			<div class="categorias__item tablet">
+				<a href="categoria_a.html">
+					<img src="assets\img\tablets.jpg">
+				</a>
+			</div>				
+			<div class="categorias__item smartwatch">
+				<a href="categoria_b.html">
+					<img src="assets\img\smartwatchs.jpg">
+				</a>
+			</div>
+			<div class="categorias__item buds">
+				<a href="categoria_c.html">
+					<img src="assets\img\buds.jpg">
+				</a>
+			</div>
+			<div class="categorias__item tv">
+				<a href="categoria_d.html">
+					<img src="assets\img\smarttv.jpg">
+				</a>
+			</div>
+			<div class="smartphones">
+				<a href="categoria_e.html">
+					<div>
+						<video loop autoplay=true muted>
+							<source src="assets\video\smartphones.mp4" type="video/mp4">
+						</video>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+<!------------------------------------------FOOTER------------------------------------------>
+
+	<footer>
+		<p>Copyright © 2022 Tuempresa S.R.L.</p>
+		<ul class="ul-desktop">
+			<a href="#term-cond">
+				<li class="footer__li--terminos">
+				Términos y Condiciones
+				</li>	
+			</a>
+			<a href="#contactpage">
+				<li class="footer__li--contacto">
+				Formulario de Contacto
+				</li>	
+			</a>
+			<li class="footer__li--redes-sociales">
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-instagram-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-youtube"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fas fa-envelope"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-whatsapp-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-linkedin"></i></a>
+			</li>
+		</ul>
+
+		<ul class="ul-mobile">
+			<a href="#term-cond">
+				<li class="footer__li--terminos-mobile">
+					Términos y Condiciones	
+				</li>
+			</a>
+			<a href="#contactpage">
+				<li class="footer__li--contacto-mobile">
+					Formulario de Contacto
+				</li>
+			</a>	
+			<li class="footer__li--redes-sociales-mobile">
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-instagram-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-youtube"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fas fa-envelope"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-whatsapp-square"></i></a>
+				<a href="https://instagram.com/ale_fernandez_99"><i class="fab fa-linkedin"></i></a>
+			</li>
+		</ul>
+		<img class="footer__img" src="assets\img\data_fiscal.png">
+	</footer>
+
+
+<!------------------------------------------CONTACTO------------------------------------------>
+
+	<div class="contact-page" id="contactpage">
+		<a href="#"><div class="contact-page_blur"></div></a>
+		<div class="contact-container">
+			<form class="contact-form">
+				<div class="contact-form_envelope">
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="contact-form__name">
+					<input type="text" class="contact-form__input" placeholder="Nombre">
+				</div>
+				<div class="contact-form__last-name">
+					<input type="text" class="contact-form__input" placeholder="Last Name">
+				</div>
+				<div class="contact-form__mail">
+					<input type="text" class="contact-form__input" placeholder="Mail">
+				</div>
+				<div class="contact-form__phone">
+					<input type="text" class="contact-form__input" placeholder="Número de Teléfono">
+				</div>
+				<div class="contact-form__message">
+					<textarea type="text" class="contact-form__input message-input" placeholder="Mensaje"></textarea> 
+				</div>
+				<div class="contact-form__submit">
+					<input type="submit" class="contact-form__input contact-input-submit">
+				</div>
+			</form>
+			<button class="contact-exit">
+				<a href="#"><i class="fas fa-times"></i></a>
+			</button>
+		</div>
+	</div>
+
+<!------------------------------------------Term&Cond------------------------------------------>
+ 
+<div class="contact-page" id="term-cond">
+		<a href="#"><div class="term-cond-page_blur"></div></a>
+		<div class="term-cond-container">
+			<form class="term-cond-form">
+				<div class="term-cond_content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+					Finalmente, aceptás que tanto la pizza como las empanadas con ananá son el pináculo de la evolución humana.
+
+					<div class="term-cond-form__submit">
+						<input type="submit" class="term-cond-form__input term-cond-input-submit">
+					</div>
+				</div>
+			</form>
+			<button class="term-cond-exit">
+				<a href="#"><i class="fas fa-times"></i></a>
+			</button>
+		</div>
+	</div>
+
+
+</body>
+</html>
