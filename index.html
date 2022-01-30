@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="config_base.css">
-
+	<link rel="stylesheet" type="text/css" href="CSS\config_base.css">
 
 	<link rel="icon" href="C:\Users\alejf\OneDrive\Imágenes\Icons\alejandro_magno_icon.ico">
 
@@ -109,54 +108,55 @@
 
 <!------------------------------------------CONTENT------------------------------------------>
 
-	<section class="slider">
-		<ul>
-			<li><a href="#"><img src="assets\img\k9dbannerEn.jpg"></a></li>
-			<li><a href="#"><img src="assets\img\mi-11t-banner.jpg"></a></li>
-			<li><a href="#"><img src="assets\img\mi-11t-pro-banner.jpg"></a></li>
-			<li><a href="#"><img src="assets\img\PC_Banner-c3j1.jpg"></a></li>
-			<li><a href="#"><img src="assets\img\redmi10banner.jpg"></a></li>
-		</ul>	
-	</section>
+	<main>
+		<section class="slider">
+			<ul>
+				<li><a href="#"><img src="assets\img\k9dbannerEn.jpg"></a></li>
+				<li><a href="#"><img src="assets\img\mi-11t-banner.jpg"></a></li>
+				<li><a href="#"><img src="assets\img\mi-11t-pro-banner.jpg"></a></li>
+				<li><a href="#"><img src="assets\img\PC_Banner-c3j1.jpg"></a></li>
+				<li><a href="#"><img src="assets\img\redmi10banner.jpg"></a></li>
+			</ul>	
+		</section>
 
-	<section class="categorias">
-		<div class="categorias-container">
-			<div class="categorias__title">
-				<div><h2>CATEGORIAS</h2></div>
-				<img src="assets\img\espacio-nebulosa.jpg">
+		<section class="categorias">
+			<div class="categorias-container">
+				<div class="categorias__title">
+					<div><h2>CATEGORIAS</h2></div>
+					<img src="assets\img\espacio-nebulosa.jpg">
+				</div>
+				<div class="categorias__item tablet">
+					<a href="categoria_a.html">
+						<img src="assets\img\tablets.jpg">
+					</a>
+				</div>				
+				<div class="categorias__item smartwatch">
+					<a href="categoria_b.html">
+						<img src="assets\img\smartwatchs.jpg">
+					</a>
+				</div>
+				<div class="categorias__item buds">
+					<a href="categoria_c.html">
+						<img src="assets\img\buds.jpg">
+					</a>
+				</div>
+				<div class="categorias__item tv">
+					<a href="categoria_d.html">
+						<img src="assets\img\smarttv.jpg">
+					</a>
+				</div>
+				<div class="smartphones">
+					<a href="categoria_e.html">
+						<div>
+							<video loop autoplay=true muted>
+								<source src="assets\video\smartphones.mp4" type="video/mp4">
+							</video>
+						</div>
+					</a>
+				</div>
 			</div>
-			<div class="categorias__item tablet">
-				<a href="categoria_a.html">
-					<img src="assets\img\tablets.jpg">
-				</a>
-			</div>				
-			<div class="categorias__item smartwatch">
-				<a href="categoria_b.html">
-					<img src="assets\img\smartwatchs.jpg">
-				</a>
-			</div>
-			<div class="categorias__item buds">
-				<a href="categoria_c.html">
-					<img src="assets\img\buds.jpg">
-				</a>
-			</div>
-			<div class="categorias__item tv">
-				<a href="categoria_d.html">
-					<img src="assets\img\smarttv.jpg">
-				</a>
-			</div>
-			<div class="smartphones">
-				<a href="categoria_e.html">
-					<div>
-						<video loop autoplay=true muted>
-							<source src="assets\video\smartphones.mp4" type="video/mp4">
-						</video>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
-
+		</section>
+	</main>
 
 <!------------------------------------------FOOTER------------------------------------------>
 
@@ -245,7 +245,7 @@
 
 <!------------------------------------------Term&Cond------------------------------------------>
  
-<div class="contact-page" id="term-cond">
+	<div class="contact-page" id="term-cond">
 		<a href="#"><div class="term-cond-page_blur"></div></a>
 		<div class="term-cond-container">
 			<form class="term-cond-form">
@@ -411,9 +411,11 @@
 					</div>
 				</div>
 			</form>
+
 			<button class="term-cond-exit">
 				<a href="#"><i class="fas fa-times"></i></a>
 			</button>
+
 		</div>
 	</div>
 
