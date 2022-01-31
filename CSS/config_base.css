@@ -319,8 +319,6 @@ footer p {
 
 /*-----------------------------ASIDE-----------------------------*/
 
-
-
 .aside-mobile {
 	display: flex;
 	position: fixed;
@@ -328,7 +326,14 @@ footer p {
 	height: 100vh;
 	background-color: #321B67;
 	z-index: 3000;
+	overflow: auto;
 	visibility: hidden;
+	transition: 500ms;
+	animation: go-right 2s 1;
+}
+
+.aside-mobile::-webkit-scrollbar {
+  width: 1px;
 }
 
 .aside-mobile .item a {
@@ -348,8 +353,8 @@ footer p {
 
 .aside-mobile .item a:active, 
 .aside-mobile .item a:active i {
-background-color: blanchedalmond;
-color: #160C2E;
+	background-color: blanchedalmond;
+	color: #160C2E;
 }
 
 .aside-home-y-cerrar {
@@ -396,16 +401,16 @@ color: #160C2E;
 	border-radius: 5px;
 }
 
-.aside-mobile_blur {
-	display: inline-block;
-	width: 150vw;
-	height: 150vh;
-	background-color: #111;
-	opacity: 0.6;
-	filter: blur(2px);
+@keyframes go-right {
+	from {
+		transform: translateX(-1000px);
+
+	}
+
+	to{
+		transform: translateX(0)
+	}
 }
-
-
 
 /*
 ==================================================================
@@ -472,7 +477,7 @@ color: #160C2E;
 	grid-template-areas: 
 	". title       title       title       title       ."
 	". tablet      tablet      smartwatch  buds        ."
-	". tablet 	  tablet 	  tv  		  tv           ."
+	". tablet 	   tablet 	   tv  	  	   tv          ."
 	". smartphones smartphones smartphones smartphones ."
 	". smartphones smartphones smartphones smartphones .";
 	grid-template-rows: 10vh repeat(4, 1fr);
@@ -534,7 +539,7 @@ color: #160C2E;
 
 /*
 ==================================================================
-========================PÁGINA DE CONTACTO========================
+======================FORMULARIO DE CONTACTO======================
 ==================================================================
 */
 
@@ -608,13 +613,13 @@ color: #160C2E;
 	text-align: center;
 	border: none;
 	border-radius: 50%;
-	padding: 0.3em 0.5em 0.2em 0.5em;
+	padding: 3px 7px 2px 7px;
 }
 
 .contact-exit i, 
 .term-cond-exit i {
 	color: white;
-	font-size: 1.5em;
+	font-size: 15px;
 }
 
 .contact-form {
@@ -741,7 +746,7 @@ color: #160C2E;
 
 /*
 ==================================================================
-========================PÁGINA DE CONTACTO========================
+======================TERMINOS Y CONDICIONES======================
 ==================================================================
 */
 
@@ -867,6 +872,11 @@ color: #160C2E;
 	grid-row-gap: 2px;
 	}
 
+	.categorias__title div h2 {
+	font-size: 3rem;
+	}
+
+
 	/*FORMULARIO DE CONTACTO--------*/
 	.contact-form__input,
 	.term-cond-form__input {
@@ -893,10 +903,6 @@ color: #160C2E;
 @media (max-width: 650px) {
 
 	* {font-size: 2.7vw;}
-
-	.categorias__title div h2 {
-	font-size: 3rem;
-	}
 }
 
 @media (max-width: 550px) {
@@ -915,6 +921,9 @@ color: #160C2E;
 	width: calc(96% - 4px);
  	}
 
+	.categorias__title div h2 {
+	font-size: 2.7rem;
+	}
 
 	/*FORMULARIO DE CONTACTO--------*/
 
@@ -935,7 +944,7 @@ color: #160C2E;
 	}
 
 	.contact-form_envelope i{
-	font-size: 20vw;
+	font-size: 14vw;
 	}
 
 	.contact-form__name,
@@ -979,7 +988,20 @@ color: #160C2E;
 
 	/*CONTENIDO PAG DE INICIO--------*/
 	.categorias__title div h2 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+	}
+
+	/*FORMULARIO DE CONTACTO--------*/
+	.contact-form_envelope i{
+	font-size: 20vw;
+	}
+}
+
+@media (max-width: 250px) {
+
+	/*CONTENIDO PAG DE INICIO--------*/
+	.categorias__title div h2 {
+	font-size: 3rem;
 	}
 
 	/*FORMULARIO DE CONTACTO--------*/
@@ -987,6 +1009,3 @@ color: #160C2E;
 	font-size: 30vw;
 	}
 }
-
-
-
