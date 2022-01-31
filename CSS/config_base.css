@@ -476,10 +476,11 @@ footer p {
 	". tablet 	   tablet 	   tv  	  	   tv          ."
 	". smartphones smartphones smartphones smartphones ."
 	". smartphones smartphones smartphones smartphones .";
-	grid-template-rows: 10vh repeat(4, 1fr);
+	grid-template-rows: 10vh repeat(2, 1fr) 5vh;
 	grid-template-columns: 10% repeat(4, 1fr) 10%;
 	grid-column-gap: 2px;
 	grid-row-gap: 2px;
+	margin-bottom: 2vh;
 }
 
 .categorias__title {
@@ -531,17 +532,21 @@ footer p {
 	grid-area: smartphones;
 }
 
-.cobertura {
-	display: flex;
-	background-color: #b3cdd1;
-	background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
-}
-
 .categorias img, .smartphones video{
 	width: 100%;
 	height: 100%;
-	opacity: 0.4;
 }
+
+.categorias__item:hover {
+	transform: scale(1.02);
+	background-color: #7f5a83;
+	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+.categorias__item img:hover, .categorias__item video:hover{
+	opacity: 0.3;
+}
+
 
 /*
 ==================================================================
@@ -864,22 +869,23 @@ footer p {
 	/*CONTENIDO PAG DE INICIO--------*/
 
 	.categorias-container {
-	grid-template-areas: 
-	". title       title       ."
-	". tablet      tablet      ."
-	". tablet 	   tablet      ."
-	". smartwatch  buds        ."
-	". tv  		   tv          ."
-	". smartphones smartphones ."
-	". smartphones smartphones .";
-	grid-template-rows: 10vh repeat(6, 1fr);
-	grid-template-columns: 10% repeat(2, 1fr) 10%;
-	grid-column-gap: 2px;
-	grid-row-gap: 2px;
+		max-height: 200vh;
+		grid-template-areas: 
+		". title       title       ."
+		". tablet      tablet      ."
+		". tablet 	   tablet      ."
+		". smartwatch  buds        ."
+		". tv  		   tv          ."
+		". smartphones smartphones ."
+		". smartphones smartphones .";
+		grid-template-rows: 10vh repeat(6, 1fr);
+		grid-template-columns: 10% repeat(2, 1fr) 10%;
+		grid-column-gap: 2px;
+		grid-row-gap: 2px;
 	}
 
 	.categorias__title div h2 {
-	font-size: 3rem;
+	
 	}
 
 
