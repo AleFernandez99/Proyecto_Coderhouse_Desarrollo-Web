@@ -7,7 +7,7 @@
 * {
 	font-family: arial;
 	font-weight: 400;
-	font-size: 0.9vw;
+	font-size: 0.8vw;
 	margin: 0;
 	padding: 0;
 	color: blanchedalmond;
@@ -23,7 +23,7 @@ body {
 header {
 	background-color: #a4508b;
 	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-	position: fixed;
+	position: sticky;
 	width: 100%;
 	text-align: center;
 	height: 115px;
@@ -541,10 +541,12 @@ footer p {
 	transform: scale(1.02);
 	background-color: #7f5a83;
 	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+	border-radius: 10px;
 }
 
 .categorias__item img:hover, .categorias__item video:hover{
 	opacity: 0.3;
+	border-radius: 10px;
 }
 
 
@@ -772,6 +774,82 @@ footer p {
 	margin: 2vw 0 1vw 0;
 }
 
+
+/*
+==================================================================
+======================PÁGINAS DE CATEGORÍAS=======================
+==================================================================
+*/
+
+/*----Selector de Layout----*/
+
+.selector-cartas{
+	padding: 3px;
+	background-color: purple;
+	border-top: 2px solid black;
+}
+
+.cartas-btn {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	padding: 6px 7px 3px 7px;
+	border-radius: 5%;
+}
+
+.filtros-btn {
+	display: none;
+}
+
+.cartas-btn:focus, .filtros-btn:focus {
+	background-color: blanchedalmond;
+
+}
+
+.cartas-btn:focus .cartas-i, 
+.filtros-btn:focus .cartas-i {
+	color: #160C2E;	
+}
+
+
+/*---------Cartas---------*/
+
+.card {
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+}
+
+.card-h-text-container::-webkit-scrollbar-thumb {
+  background: #7ee8fa;
+ }
+
+.card-h-text-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #160C2E;
+  border-radius: 5px;
+  border: none;
+} 
+
+.card-text {
+	max-height: 150px;
+}
+
+.cartas-verticales {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 ==================================================================
 ============================= MOBILE =============================
@@ -781,18 +859,30 @@ footer p {
 
 @media (max-width: 1650px) {
 
-	* {font-size: 1vw;}
+	* {font-size: 18px;}
+
+	/*Págs de Categorías----------------*/
+	.Espacio-vacio {
+		display: none;
+	}
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1400px) {
 
-	* {font-size: 1.2vw;}
+	* {font-size: 15px;}
+
+	/*Págs de Categorías----------------*/
+
+	.card-h-text-container{
+		overflow: auto;
+	}
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
 
-	* {font-size: 1.3vw;}
+	* {font-size: 14px;}
 }
+
 
 @media (max-width: 1120px) {
 
@@ -805,12 +895,26 @@ footer p {
 		display: inline-block;
 		margin-bottom: 10px;
 	}
+
+}
+
+@media (max-width: 1060px) {
+
+	/*Págs de Categorías----------------*/
+	.cartas-horizontales {
+		display: none;
+	}
+
+	.cartas-verticales {
+		display: flex;
+	}
+
 }
 
 @media (max-width: 1024px) {
 
 	* {
-		font-size: 1.7vw;
+		font-size: 13px;
 	}
 
 	.div-buscador, .menu .desktop {
@@ -823,7 +927,7 @@ footer p {
 
 	header {
 		height: 68px;
-		margin-bottom: 30vh;
+		
 	}
 
 	.div-logo {
@@ -897,30 +1001,18 @@ footer p {
 	}
 }
 
-@media (max-width: 950px) {
 
-	* {font-size: 1.8vw;}
+@media (max-width: 768px) {
+	/*Págs de Categorías----------------*/
+	.cartas-btn{
+		display: none;
+	}
+
+	.filtros-btn {
+		display: inline-block;
+	}
 }
 
-@media (max-width: 850px) {
-
-	* {font-size: 2.1vw;}
-}
-
-@media (max-width: 750px) {
-
-	* {font-size: 2.4vw;}
-}
-
-@media (max-width: 650px) {
-
-	* {font-size: 2.7vw;}
-}
-
-@media (max-width: 550px) {
-
-	* {font-size: 3vw;}
-}
 
 @media (max-width: 480px) {
 	.categorias-container {
@@ -978,8 +1070,6 @@ footer p {
 
 @media (max-width: 450px) {
 
-	* {font-size: 3.4vw;}
-
 	/*Footer----------------------------*/
 	.ul-mobile {
 		margin-bottom: 80px;
@@ -989,7 +1079,7 @@ footer p {
 
 @media (max-width: 350px) {
 
-	* {font-size: 10px;}
+	* {font-size: 11px;}
 
 	/*Footer----------------------------*/
 	.footer__li--terminos-mobile, 
