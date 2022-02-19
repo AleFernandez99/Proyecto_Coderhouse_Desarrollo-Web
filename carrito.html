@@ -122,53 +122,412 @@
 <!------------------------------------------CONTENT------------------------------------------>
 
 	<main>
-		<section class="slider">
-			<ul>
-				<li><a href="#"><img src="assets\img\k9dbannerEn.jpg"></a></li>
-				<li><a href="#"><img src="assets\img\mi-11t-banner.jpg"></a></li>
-				<li><a href="#"><img src="assets\img\mi-11t-pro-banner.jpg"></a></li>
-				<li><a href="#"><img src="assets\img\PC_Banner-c3j1.jpg"></a></li>
-				<li><a href="#"><img src="assets\img\redmi10banner.jpg"></a></li>
-			</ul>	
-		</section>
+		<section class="carrito">
 
-		<section class="categorias">
-			<div class="categorias-container">
-				<div class="categorias__title">
-					<div><h2>CATEGORIAS</h2></div>
-					<img src="assets\img\espacio-nebulosa.jpg">
-				</div>
-				<div class="categorias__elemento tablet">
+			<div class="card-carrito">
+				<div class="card-carrito__container">
+				  <h3 class="card-header">Carrito</h3>
 
-					<a href="categoria_a.html">
-						<img src="assets\img\tablets.jpg">
-					</a>
-				</div>				
-				<div class="categorias__elemento smartwatch">
-					<a href="categoria_b.html">
-						<img src="assets\img\smartwatchs.jpg">
-					</a>
-				</div>
-				<div class="categorias__elemento buds">
-					<a href="categoria_c.html">
-						<img src="assets\img\buds.jpg">
-					</a>
-				</div>
-				<div class="categorias__elemento tv">
-					<a href="categoria_d.html">
-						<img src="assets\img\smarttv.jpg">
-					</a>
-				</div>
-				<div class="categorias__elemento smartphones">
-					<a href="categoria_e.html">
-						<div>
-							<video loop autoplay=true muted>
-								<source src="assets\video\smartphones.mp4" type="video/mp4">
-							</video>
+					<div class="card-carrito__producto">
+
+						<div class="card-carrito__producto--img">
+							<img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
 						</div>
-					</a>
+
+						<div class="card-carrito__producto--info">
+							<div>
+							    <h5>Xiaomi Redmi note pro 9</h5>
+								<span class="envio">Envío gratis</span>
+							    <ul class="nav justify-content-start opciones-carrito">
+								  <li class="nav-item">
+								    <a class="nav-link active opciones-carrito__eliminar" aria-current="page" href="#">Eliminar</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#">Guardar para después</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#">Comprar ahora</a>
+								  </li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card-carrito__producto--cantidad">
+							<div class="input-group mb-3 cantidad-productos-contaier">
+							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon1">-</button>
+							  <input type="text" class="form-control cantidad-productos-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon2">+</button>
+							</div>
+
+						</div>
+
+						<div class="card-carrito__producto--precio">
+							<form class="precio-carrito-container">
+								<input class="precio-carrito" type="text" name="precio-carrito" value="$85.000">
+							</form>
+						</div>
+					</div>
+
+					<hr style="background-color: #111;">
+
+
+					<div class="card-carrito_btn-container d-flex justify-content-end">
+				    	<a href="#" class="btn btn-compra">Continuar compra</a>
+				    </div>
+
+
 				</div>
 			</div>
+
+
+		</section>
+
+		<section class="otros-productos">
+
+			<h2>Productos que te interesaron</h2>
+
+			<div id="carouselExampleDark" class="carousel slide" data-bs-interval="false">
+			  <div class="carousel-inner">
+
+			    <div class="carousel-item active">
+					<div class="d-block w-100">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card phone-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card v-tablet-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card h-tablet-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			    <div class="carousel-item">
+					<div class="d-block w-100">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card phone-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card v-tablet-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card h-tablet-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="d-block w-100">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card phone-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+
+							<div class="card v-tablet-none">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card h-tablet-none">
+							  <a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+							  </a>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+			    <div class="carousel-item">
+					<div class="w-100 h-tablet-display">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card phone-none">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card v-tablet-none">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			    <div class="carousel-item">
+					<div class="w-100 v-tablet-display">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card v-tablet-hide">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card v-tablet-hide phone-none">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			    <div class="carousel-item">
+					<div class="w-100 phone-display">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			    <div class="carousel-item">
+					<div class="w-100 phone-display">
+						<div class="card-container d-flex flex-row justify-content-center">
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+
+							<div class="card">
+								<a href="#">
+								  <img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+								  <div class="card-body">
+								  	<h5 class="card-title fs-4" style="color: #222;">Producto</h5>
+								    <p class="card-text" style="color: black;">
+								    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								  </div>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+			  </div>
+
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
 		</section>
 	</main>
 
