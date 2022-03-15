@@ -44,11 +44,11 @@
 			<ul class="desktop">
 				<li class="elemento"><a href="#">Categorías <i class="fas fa-chevron-down"></i></a>
 					<ul class="desple">
-						<li><a href="categoria_a.html"> Categoría A</a></li>
-						<li><a href="categoria_b.html"> Categoría B</a></li>
-						<li><a href="categoria_c.html"> Categoría C</a></li>
-						<li><a href="categoria_d.html"> Categoría D</a></li>
-						<li><a href="categoria_e.html"> Categoría E</a></li>
+						<li><a href="categoria_a.html">Tablets</a></li>
+						<li><a href="categoria_b.html">Smartwatches</a></li>
+						<li><a href="categoria_c.html">Auriculares</a></li>
+						<li><a href="categoria_d.html">Smart tvs</a></li>
+						<li><a href="categoria_e.html">Smartphones</a></li>
 					</ul>
 				</li>
 				<li class="elemento"><a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a></li>
@@ -82,11 +82,7 @@
 		<ul class="aside-mobile__ul">
 
 			<div class="aside-home-y-cerrar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-				<li class="elemento aside-mobile__li-inicio"><a><i class="fas fa-chevron-circle-left"></i></a></li>
-			</div>
-
-			<div class="aside-home-y-cerrar">
-				<li class="elemento aside-mobile__li-inicio"><a href="index.html"><i class="fas fa-home"></i> Inico</a></li>
+				<li class="aside-mobile__li-cerrar"><a><i class="fas fa-chevron-circle-left"></i></a></li>
 			</div>
 
 			<div class="aside-mobile__buscador">
@@ -98,24 +94,25 @@
 
 				</form>
 			</div>
-			
-			<li class="elemento"><a href="categoria_a.html"> Categoría A</a></li>
-			<li class="elemento"><a href="categoria_b.html"> Categoría B</a></li>
-			<li class="elemento"><a href="categoria_c.html"> Categoría C</a></li>
-			<li class="elemento"><a href="categoria_d.html"> Categoría D</a></li>
-			<li class="elemento"><a href="categoria_e.html"> Categoría E</a></li>
+
+			<li class="elemento"><a href="categoria_a.html">Tablets</a></li>
+			<li class="elemento"><a href="categoria_b.html">Smartwatches</a></li>
+			<li class="elemento"><a href="categoria_c.html">Auriculares</a></li>
+			<li class="elemento"><a href="categoria_d.html">Smart tvs</a></li>
+			<li class="elemento"><a href="categoria_e.html">Smartphones</a></li>
 			<hr>
-		
-			<li class="elemento aside-mobile__ul--li"><a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a></li>
-			<li class="elemento aside-mobile__ul--li"><a href="tiendas.html"><i class="fas fa-store"></i> Tiendas</a></li>
-			<li class="elemento aside-mobile__ul--li"><a href="nosotros.html"><i class="fas fa-question-circle"></i> Ayuda</a></li>
-			<li class="elemento aside-mobile__ul--li"><a href="nosotros.html"><i class="fas fa-user-friends"></i> Nosotros</a></li>
-			<li class="elemento aside-mobile__ul--li"><a href="mis_compras.html"><i class="fas fa-receipt"></i> Mis Compras</a></li>
-			<li class="elemento aside-mobile__ul--li"><a href="mi_cuenta.html"><i class="fas fa-address-book"></i> Mi cuenta</a></li>
-			<li class="elemento aside-mobile__li--carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"> Carrito</i></a></li>
+
+			<li class="elemento aside-mobile__ul--li"><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="ofertas.html"><i class="fas fa-tags"></i>Ofertas</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="tiendas.html"><i class="fas fa-store"></i>Tiendas</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="ayuda.html"><i class="fas fa-question-circle"></i>Ayuda</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="nosotros.html"><i class="fas fa-user-friends"></i>Nosotros</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="mis_compras.html"><i class="fas fa-receipt"></i>Mis Compras</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="mi_cuenta.html"><i class="fas fa-address-book"></i>Mi cuenta</a></li>
+			<li class="elemento aside-mobile__ul--li"><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
 			<hr>	
 		
-			<li class="elemento aside-mobile__li-nosotros"><a href="nosotros.html"><i class="fas fa-user-friends"></i> Nosotros</a></li>
+			<li class="elemento aside-mobile__li-nosotros"><a href="nosotros.html"><i class="fas fa-user-friends"></i>Nosotros</a></li>
 		</ul>
 	</aside>
 
@@ -126,7 +123,7 @@
 
 			<div class="card-carrito">
 				<div class="card-carrito__container">
-				  <h3 class="card-header">Carrito</h3>
+				  <h3 class="card-header" style="color:#7ee8fa">Carrito</h3>
 
 					<div class="card-carrito__producto">
 
@@ -136,7 +133,7 @@
 
 						<div class="card-carrito__producto--info">
 							<div>
-							    <h5>Xiaomi Redmi note pro 9</h5>
+							    <h5 class="carrito-prod-titulo">Xiaomi Redmi note pro 9</h5>
 								<span class="envio">Envío gratis</span>
 							    <ul class="nav justify-content-start opciones-carrito">
 								  <li class="nav-item">
@@ -152,13 +149,56 @@
 							</div>
 						</div>
 
-						<div class="card-carrito__producto--cantidad">
+
+						<!---Parte mobile---->
+						<div class="carrito-mobile card-carrito__producto--titulo">
+						    <h5 class="carrito-prod-titulo">Xiaomi Redmi note pro 9</h5>
+						</div>
+
+						<div class="carrito-mobile card-carrito__producto--opciones">
+						    <ul class="nav justify-content-start opciones-carrito d-flex justify-content-between">
+							  <li class="nav-item">
+							    <a class="nav-link envio-carrito">Envío gratis</a>
+							  </li>
+
+							  <li>
+								<div class="card-carrito__producto--cantidad ">
+									<div class="input-group mb-3 cantidad-productos-contaier">
+									  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon1">-</button>
+									  <input type="text" class="form-control cantidad-productos-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+									  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon2">+</button>
+									</div>
+								</div>
+							  </li>
+
+							  <li class="nav-item" data-bs-toggle="collapse" href="#opciones-carrito-collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+							    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-ellipsis-v elipsis-carrito"></i></a>
+							  </li>
+							</ul>
+						</div>
+
+						<div class="carrito-mobile opciones-carrito-collapse collapse" id="opciones-carrito-collapse1">
+						    <ul class="nav justify-content-start opciones-carrito">
+							  <li class="nav-item">
+							    <a class="nav-link active" href="#">Eliminar</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="#">Guardar</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="#">Comprar ahora</a>
+							  </li>
+							</ul>
+						</div>
+
+						<!---Fin Parte mobile---->
+
+						<div class="card-carrito__producto--cantidad none-780">
 							<div class="input-group mb-3 cantidad-productos-contaier">
 							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon1">-</button>
 							  <input type="text" class="form-control cantidad-productos-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
 							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon2">+</button>
 							</div>
-
 						</div>
 
 						<div class="card-carrito__producto--precio">
@@ -168,19 +208,102 @@
 						</div>
 					</div>
 
-					<hr style="background-color: #111;">
+					<hr class="carrito-separador-productos">
 
+					<div class="card-carrito__producto">
+
+						<div class="card-carrito__producto--img">
+							<img src="assets\img\cel1.jpg" class="card-img-top mt-2 rounded-3 shadow" alt="...">
+						</div>
+
+						<div class="card-carrito__producto--info">
+							<div>
+							    <h5 class="carrito-prod-titulo">Xiaomi Redmi note pro 9</h5>
+								<span class="envio">Envío gratis</span>
+							    <ul class="nav justify-content-start opciones-carrito">
+								  <li class="nav-item">
+								    <a class="nav-link active opciones-carrito__eliminar" href="#">Eliminar</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#">Guardar para después</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#">Comprar ahora</a>
+								  </li>
+								</ul>
+							</div>
+						</div>
+
+
+						<!---Parte mobile---->
+						<div class="carrito-mobile card-carrito__producto--titulo">
+						    <h5 class="carrito-prod-titulo">Xiaomi Redmi note pro 9</h5>
+						</div>
+
+						<div class="carrito-mobile card-carrito__producto--opciones">
+						    <ul class="nav justify-content-start opciones-carrito d-flex justify-content-between">
+							  <li class="nav-item">
+							    <a class="nav-link envio-carrito">Envío gratis</a>
+							  </li>
+
+							  <li>
+								<div class="card-carrito__producto--cantidad ">
+									<div class="input-group mb-3 cantidad-productos-contaier">
+									  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon1">-</button>
+									  <input type="text" class="form-control cantidad-productos-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+									  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon2">+</button>
+									</div>
+								</div>
+							  </li>
+
+							  <li class="nav-item" data-bs-toggle="collapse" href="#opciones-carrito-collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+							    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-ellipsis-v elipsis-carrito"></i></a>
+							  </li>
+							</ul>
+						</div>
+
+						<div class="carrito-mobile opciones-carrito-collapse collapse" id="opciones-carrito-collapse2">
+						    <ul class="nav justify-content-start opciones-carrito">
+							  <li class="nav-item">
+							    <a class="nav-link active" href="#">Eliminar</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="#">Guardar</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="#">Comprar ahora</a>
+							  </li>
+							</ul>
+						</div>
+
+						<!---Fin Parte mobile---->
+
+						<div class="card-carrito__producto--cantidad none-780">
+							<div class="input-group mb-3 cantidad-productos-contaier">
+							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon1">-</button>
+							  <input type="text" class="form-control cantidad-productos-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+							  <button class="btn btn-outline-secondary btn-cantidad-producto" type="button" id="button-addon2">+</button>
+							</div>
+						</div>
+
+						<div class="card-carrito__producto--precio">
+							<form class="precio-carrito-container">
+								<input class="precio-carrito" type="text" name="precio-carrito" value="$85.000">
+							</form>
+						</div>
+					</div>
+
+					<hr class="carrito-separador-productos">
 
 					<div class="card-carrito_btn-container d-flex justify-content-end">
 				    	<a href="#" class="btn btn-compra">Continuar compra</a>
 				    </div>
 
-
 				</div>
 			</div>
-
-
 		</section>
+
+		<!--Carrusel de Otros productos---->
 
 		<section class="otros-productos">
 
